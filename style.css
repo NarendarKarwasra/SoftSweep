@@ -3978,6 +3978,7 @@ html {
     border-radius: 1.125rem;
     box-shadow: 0 0.625rem 1.875rem var(--color-shadow);
     padding: 1.2rem 1rem;
+    margin-top: 40px;
   }
 
   .fran-piller .cards-wrap {
