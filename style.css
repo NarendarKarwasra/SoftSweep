@@ -5619,7 +5619,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -5642,12 +5642,12 @@ html {
     }
     .vs-badge {
       position: relative;
-      transform: translate(-0%, -0%);
+      transform: translate(-0%, -0%) !important;
       width: 80px;
       height: 80px;
       font-size: 2rem;
       left: 50%;
-      transform: translate(-50%);
+      transform: translate(-50%) !important;
     }
   }
 
