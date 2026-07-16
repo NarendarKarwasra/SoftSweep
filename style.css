@@ -42,9 +42,12 @@ html {
 }
 
 
-/* #uselatter {
+#contact-form {
   scroll-margin-top: 100px;
-} */
+}
+#consultForm {
+  scroll-margin-top: 300px;
+}
 
 
 
@@ -6670,3 +6673,932 @@ html {
       padding: 14px 16px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ads page */
+
+  /* hero */
+
+  .ads-hero .hero__character {
+    border: none;
+  }
+
+  /* feature strp section */
+
+  .ads-feature-strip {
+    margin-top: -60px;
+  }
+  .ads-feature-strip .stats-bar {
+    border-color: #e5e5e5;
+  }
+
+  .ads-feature-strip .stat-icon {
+    border: 2px solid rgba(211, 211, 211, 0.47);
+}
+
+.ads-feature-strip .stat-label {
+    color: #727272;
+    font-weight: 400;
+    white-space: wrap;
+}
+
+
+@media (max-width: 1250px) {
+    .stat-item {
+        justify-content: center;
+    }
+}
+@media (max-width: 700px) {
+    .stat-item {
+        justify-content: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.ads-transformation-process .tp-eyebrow {
+    color: var(--color-indigo);
+}
+.ads-transformation-process .tp-num {
+    color: var(--color-indigo);
+    font-size: 22px;
+    font-weight: 600;
+}
+.ads-transformation-process .tp-step {
+    max-width: 200px;
+}
+.ads-transformation-process .tp-connector {
+    width: 100%;  
+    max-width: 100px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .ads-transformation-process .tp-steps {
+      flex-wrap: nowrap;
+  }
+}
+@media (max-width: 1000px) {
+    .ads-transformation-process .tp-steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .ads-transformation-process .tp-steps {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 440px) {
+    .ads-transformation-process .tp-steps {
+        grid-template-columns: 1fr;
+    }
+    .ads-transformation-process .tp-step {
+      max-width: 200px;
+      margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   Trusted by Growing Brands (logo strip)
+   ============================================ */
+.trusted-brands {
+  padding: 40px 0 40px;
+}
+
+.tb-card {
+  border: 2px solid var(--color-border);
+  border-radius: 20px;
+  padding: 20px 0px 30px;
+  background: var(--color-bg);
+}
+
+.tb-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: -32px;
+  margin-bottom: 40px;
+}
+
+.tb-eyebrow-line {
+  flex: 1;
+  max-width: 220px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-indigo-border) 60%, var(--color-indigo-border));
+}
+
+.tb-eyebrow-wrap .tb-eyebrow-line:last-child {
+  background: linear-gradient(90deg, var(--color-indigo-border) 40%, transparent);
+}
+
+.tb-eyebrow {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-indigo);
+  background: #fff;
+  padding: 0 20px;
+}
+
+.tb-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tb-logo-item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  position: relative;
+}
+
+.tb-logo-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 0;
+  width: 1px;
+  background: var(--color-border);
+}
+
+.tb-logo {
+  max-width: 90px;
+  /* max-height: 44px; */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tb-logo-item:hover .tb-logo {
+  transform: scale(1.05);
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 1024px) {
+  .tb-logos {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .tb-logo-item {
+    flex: 1 1 25%;
+  }
+
+  .tb-logo-item:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tb-logo-item {
+    flex: 1 1 33.333%;
+  }
+}
+
+@media (max-width: 440px) {
+  .tb-logo-item {
+    flex: 1 1 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   Meta + Google Ads Performance dashboard
+   ============================================ */
+.ads-performance {
+  padding: 0 0 40px;
+}
+
+.ap-card {
+  background: var(--color-heading);
+  border-radius: 20px;
+  padding: 20px 30px 30px;
+}
+
+.ap-title {
+  text-align: center;
+  margin: 0 0 24px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a78bfa;
+}
+
+.ap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.ap-panel {
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.ap-panel--chart {
+  background-color: #1B2045;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
+.ap-panel__label {
+  margin: 0 0 2px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ap-panel__value {
+  margin: 0 0 2px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ap-panel--chart-content {
+  position: absolute;
+  top: 10px;
+}
+
+.ap-panel__change {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.ap-chart-media {
+  margin-top: 8px;
+}
+
+.ap-chart-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* -------- 4 mini stat cards -------- */
+.ap-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ap-stat {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 10px 20px;
+}
+
+.ap-stat__label {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ap-stat__value {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ap-stat__change {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+/* -------- Donut + legend -------- */
+.ap-donut-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.ap-donut-media {
+  flex-shrink: 0;
+  width: 110px;
+}
+
+.ap-donut-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ap-panel--donut .ap-panel__label {
+  margin-bottom: 30px;
+}
+
+.ap-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ap-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ap-legend strong {
+  margin-left: auto;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.ap-legend-dot {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.ap-legend-dot--meta {
+  background: #6c5ce7;
+}
+
+.ap-legend-dot--google {
+  background: #22c55e;
+}
+
+.ap-legend-dot--youtube {
+  background: #f97316;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 900px) {
+  .ap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .ap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ap-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-donut-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ap-chart-media {
+    padding-top: 10vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   Marketing Services (6-card grid)
+   ============================================ */
+.marketing-services {
+  padding: 0 0 40px;
+}
+
+.ms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ms-card {
+  border: 2px solid var(--color-border);
+  border-radius: 16px;
+  padding: 20px;
+  background: var(--color-bg);
+}
+
+/* -------- Cards with a media thumbnail -------- */
+.ms-card--media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.ms-card__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--color-indigo-soft);
+  border: 2px solid var(--color-indigo);
+  color: var(--color-indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.ms-title {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.ms-desc {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.ms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ms-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.ms-list i {
+  flex-shrink: 0;
+  color: var(--color-indigo);
+  font-size: 14px;
+}
+
+.ms-card__media {
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.ms-grid > .ms-card--media:nth-child(3) .ms-card__media,
+.ms-grid > .ms-card--media:nth-child(6) .ms-card__media {
+    border: none;
+}
+
+.ms-media-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------- Process card (icons only, no image) -------- */
+.ms-card__content--full {
+  margin-bottom: 20px;
+}
+
+.ms-process {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.ms-process__step {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ms-process__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-indigo);
+  background: var(--color-bg);
+  color: var(--color-indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.ms-process__step--done .ms-process__icon {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.ms-process__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-heading);
+}
+
+.ms-process__arrow {
+  margin-top: 12px;
+  color: var(--color-indigo);
+  font-size: 14px;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 1100px) {
+  .ms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .ms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ms-card--media {
+    flex-direction: column;
+  }
+
+  .ms-card__media {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .ms-process {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  
+  .ms-process__arrow {
+    display: none;
+  }
+  
+  .ms-process__step {
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 440px) {
+  .ms-card--media {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   Case Studies slider
+   ============================================ */
+.case-studies {
+  padding: 0 0 40px;
+}
+
+.cs-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cs-eyebrow {
+  margin: 0 0 0px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-indigo);
+}
+
+.cs-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-heading);
+}
+
+.cs-slider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cs-arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #4f4f4f68;
+  background: var(--color-bg);
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.cs-arrow:hover {
+  background: var(--color-indigo);
+  color: #ffffff;
+  border-color: var(--color-indigo);
+}
+
+.cs-viewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cs-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s ease;
+}
+
+.cs-slide {
+  /* flex: 0 0 calc(50% - 12px); */
+  flex: 0 0 calc((100% - 2rem) / 2);
+  min-width: 0;
+}
+@media (max-width:1100px){
+    .cs-slide{
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 860px) {
+  .cs-track {
+    gap: 16px;
+  }
+
+}
+
+.cs-card {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  border: 2px solid #efd0bb;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.cs-card__content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.cs-card__logo {
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.cs-card__campaign {
+  margin: 0 0 22px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+}
+
+.cs-card__stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.cs-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-right: 20px;
+  border-right: 1px solid var(--color-border);
+}
+
+.cs-stat:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.cs-stat strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.cs-stat span {
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--color-text-muted);
+}
+
+
+.cs-card__btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--cs-brand, var(--color-accent));
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cs-card__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cs-card__media {
+  flex: 1;
+  min-width: 0;
+  background: var(--color-bg);
+}
+
+.cs-card__image {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  padding-right: 20px;
+  object-fit: cover;
+}
+
+
+/* -------- Responsive -------- */
+@media (max-width: 1100px) {
+  .cs-card {
+    flex-direction: column;
+  }
+
+  .cs-card__media {
+    min-height: 220px;
+  }
+
+  .cs-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cs-card {
+    grid-template-columns: 1fr;
+  }
+  .cs-card__media {
+    display: none;
+  }
+  .cs-card__content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cs-card__stats {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .cs-stat {
+    flex: 1 1 40%;
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .cs-card__content {
+    padding: 10px;
+  }
+  .cs-card__btn {
+    padding: 8px 10px;
+  }
+  .cs-card__btn i {
+    display: none;
+  }
+}
